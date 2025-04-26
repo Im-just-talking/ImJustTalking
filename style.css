@@ -1,0 +1,46 @@
+
+body {
+  font-family: 'Comic Sans MS', 'Arial', sans-serif;
+  background-color: #fdf6f0;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+header {
+  background-color: #ffcad4;
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+  border-bottom: 5px solid #ffc8dd;
+}
+nav {
+  text-align: center;
+  margin: 15px 0;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ff6392;
+  font-weight: bold;
+}
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+.post {
+  background: #ffe5ec;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.post h2 {
+  color: #ff6392;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #aaa;
+}
