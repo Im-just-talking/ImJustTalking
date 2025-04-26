@@ -17,6 +17,8 @@
   </nav>
 
   <main>
+    <a href="#new-post" class="new-post-button">➕ New Post</a>
+
     <h1>Blog Posts</h1>
 
     <div class="post">
@@ -34,6 +36,21 @@
       <p>This year, I'm focusing on self-care, learning new skills, and spreading positivity. Let's grow together! 🌱</p>
     </div>
 
+    <div id="new-post" class="new-post-form">
+      <h2>Create New Post</h2>
+      <p>Fill this out, then copy the code into your posts.html later!</p>
+      <label>Post Title:</label><br>
+      <input type="text" id="postTitle" placeholder="Enter title here"><br><br>
+
+      <label>Post Content:</label><br>
+      <textarea id="postContent" placeholder="Enter content here" rows="5"></textarea><br><br>
+
+      <button onclick="generatePost()">Generate Post Code</button>
+
+      <h3>Your Post Code:</h3>
+      <textarea id="generatedCode" rows="6" readonly></textarea>
+    </div>
+
   </main>
 
   <footer>
@@ -41,5 +58,14 @@
   </footer>
 
   <div class="floating-heart">💖</div>
+
+  <script>
+  function generatePost() {
+    const title = document.getElementById('postTitle').value;
+    const content = document.getElementById('postContent').value;
+    const code = `<div class="post">\n  <h2>${title}</h2>\n  <p>${content}</p>\n</div>`;
+    document.getElementById('generatedCode').value = code;
+  }
+  </script>
 </body>
 </html>
